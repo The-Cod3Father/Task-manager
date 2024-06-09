@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #1e1e2f;
+    color: #ffffff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,14 +11,15 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #2b2b3d;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
     margin-bottom: 20px;
+    color: #ff79c6;
 }
 
 .task-input {
@@ -29,21 +31,23 @@ h1 {
 #new-task {
     width: 80%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ff79c6;
     border-radius: 5px;
+    background-color: #3b3b51;
+    color: #ffffff;
 }
 
 button {
     padding: 10px;
     border: none;
-    background-color: #5cb85c;
-    color: #fff;
+    background-color: #ff79c6;
+    color: #ffffff;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #4cae4c;
+    background-color: #e65c9d;
 }
 
 ul {
@@ -52,23 +56,29 @@ ul {
 }
 
 li {
-    background-color: #eee;
+    background-color: #4a4a66;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 li.completed {
     text-decoration: line-through;
-    background-color: #d9d9d9;
+    background-color: #60607d;
+}
+
+.timestamp {
+    font-size: 0.8em;
+    color: #bdbddb;
 }
 
 button.delete {
-    background-color: #d9534f;
+    background-color: #ff5555;
 }
 
 button.delete:hover {
-    background-color: #c9302c;
+    background-color: #ff3333;
 }
