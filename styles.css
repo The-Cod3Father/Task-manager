@@ -17,7 +17,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-h1 {
+h1, h2 {
     margin-bottom: 20px;
     color: #ff79c6;
 }
@@ -28,8 +28,8 @@ h1 {
     margin-bottom: 20px;
 }
 
-#new-task {
-    width: 80%;
+#new-task, #task-date {
+    width: 40%;
     padding: 10px;
     border: 1px solid #ff79c6;
     border-radius: 5px;
@@ -63,6 +63,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 li.completed {
@@ -73,6 +74,9 @@ li.completed {
 .timestamp {
     font-size: 0.8em;
     color: #bdbddb;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
 }
 
 button.delete {
@@ -81,4 +85,12 @@ button.delete {
 
 button.delete:hover {
     background-color: #ff3333;
+}
+
+.notes {
+    margin-top: 10px;
+    background-color: #3b3b51;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
 }
